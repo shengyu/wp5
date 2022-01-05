@@ -1,5 +1,6 @@
 import React from 'react';
 import { Column, Row } from 'react-table';
+import MyTable from './MyTable';
 import SimpleTable from './SimpleTable';
 
 export default function TableDemo() {
@@ -36,14 +37,19 @@ export default function TableDemo() {
       {
         Header: 'Actions',
         Cell: ({ row }: { row: Row<typeof data[0]> }) => (
-          <button onClick={() => console.log(row.original.name)}>Delete</button>
+          <button onClick={() => alert(row.original.name)}>Delete</button>
         ),
       },
     ],
     [],
   );
 
-  const handleDelete = (name: string) => {};
-
-  return <SimpleTable columns={columns} data={data} />;
+  return (
+    <div>
+      <h1>Simple Table</h1>
+      <SimpleTable columns={columns} data={data} />
+      <h1>My Table</h1>
+      <MyTable columns={columns} data={data} />
+    </div>
+  );
 }
