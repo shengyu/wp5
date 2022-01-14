@@ -1,5 +1,8 @@
+import { Button } from '@chakra-ui/react';
 import React from 'react';
 import { Column, Row } from 'react-table';
+import AntdTable from './AntdTable';
+import Chakratable from './ChakraTable';
 import MyTable from './MyTable';
 import SimpleTable from './SimpleTable';
 
@@ -27,7 +30,7 @@ export default function TableDemo() {
         accessor: 'name',
       },
       {
-        Header: 'Pdoiver',
+        Header: 'Provider',
         accessor: 'provider',
       },
       {
@@ -37,7 +40,14 @@ export default function TableDemo() {
       {
         Header: 'Actions',
         Cell: ({ row }: { row: Row<typeof data[0]> }) => (
-          <button onClick={() => alert(row.original.name)}>Delete</button>
+          <Button
+            aria-label="delete"
+            size="sm"
+            colorScheme={'blue'}
+            onClick={() => alert(row.original.name)}
+          >
+            Delete
+          </Button>
         ),
       },
     ],
@@ -50,6 +60,10 @@ export default function TableDemo() {
       <SimpleTable columns={columns} data={data} />
       <h1>My Table</h1>
       <MyTable columns={columns} data={data} />
+      <h1>Chakra Table</h1>
+      <Chakratable columns={columns} data={data} />
+      <h1>Antd Table</h1>
+      <AntdTable />
     </div>
   );
 }
