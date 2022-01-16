@@ -3705,7 +3705,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^5.5.0":
+"@typescript-eslint/eslint-plugin@npm:^5.5.0, @typescript-eslint/eslint-plugin@npm:^5.9.1":
   version: 5.9.1
   resolution: "@typescript-eslint/eslint-plugin@npm:5.9.1"
   dependencies:
@@ -3744,7 +3744,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^5.5.0":
+"@typescript-eslint/parser@npm:^5.5.0, @typescript-eslint/parser@npm:^5.9.1":
   version: 5.9.1
   resolution: "@typescript-eslint/parser@npm:5.9.1"
   dependencies:
@@ -6602,7 +6602,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:^7.27.1":
+"eslint-plugin-react@npm:^7.27.1, eslint-plugin-react@npm:^7.28.0":
   version: 7.28.0
   resolution: "eslint-plugin-react@npm:7.28.0"
   dependencies:
@@ -14266,6 +14266,8 @@ __metadata:
     "@types/react-dom": ^17.0.11
     "@types/react-table": ^7.7.9
     "@types/styled-components": ^5.1.19
+    "@typescript-eslint/eslint-plugin": ^5.9.1
+    "@typescript-eslint/parser": ^5.9.1
     antd: ^4.18.3
     babel-jest: ^27.4.6
     babel-loader: ^8.2.3
@@ -14281,6 +14283,7 @@ __metadata:
     dotenv-expand: ^5.1.0
     eslint: ^8.6.0
     eslint-config-react-app: ^7.0.0
+    eslint-plugin-react: ^7.28.0
     eslint-webpack-plugin: ^3.1.1
     file-loader: ^6.2.0
     framer-motion: ^5.6.0
