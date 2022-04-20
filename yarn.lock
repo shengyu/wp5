@@ -3559,6 +3559,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-csv@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "@types/react-csv@npm:1.1.2"
+  dependencies:
+    "@types/react": "*"
+  checksum: 0c69c969544cfbbf9b921e3bc8933d83a976af6edd1e126098467d47bb1e3f5c49b1aa6ecd3d5ec0b713c08ec5371ded4db121a91929ace893ef06d200557f49
+  languageName: node
+  linkType: hard
+
 "@types/react-dom@npm:^17.0.11":
   version: 17.0.11
   resolution: "@types/react-dom@npm:17.0.11"
@@ -11079,7 +11088,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
+"prop-types@npm:*, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -11718,6 +11727,13 @@ __metadata:
   peerDependencies:
     react: ^15.3.0 || ^16.0.0 || ^17.0.0
   checksum: 1ce12cabd73567b5d593ec604d0f2a59d5b818e49a96ebb2403281d43f2bbfa4091af64128d5d36e2214d30c6f9f9b043839b15515dfff9ce6851ee62c72eccc
+  languageName: node
+  linkType: hard
+
+"react-csv@npm:^2.2.2":
+  version: 2.2.2
+  resolution: "react-csv@npm:2.2.2"
+  checksum: a6ffabd67fc9ba1478b003977923cfa3ccdd9553ac5edcc3824b4a5ea849b87cb2acfcc0781b0cd0a259bf56e6a7dfd35cfc307576aa51819fc5a32b03118fab
   languageName: node
   linkType: hard
 
@@ -14263,6 +14279,7 @@ __metadata:
     "@types/jest": ^27.0.3
     "@types/node": ^16.11.17
     "@types/react": ^17.0.38
+    "@types/react-csv": ^1.1.2
     "@types/react-dom": ^17.0.11
     "@types/react-table": ^7.7.9
     "@types/styled-components": ^5.1.19
@@ -14302,6 +14319,7 @@ __metadata:
     prompts: ^2.4.2
     react: ^17.0.2
     react-app-polyfill: ^3.0.0
+    react-csv: ^2.2.2
     react-dev-utils: ^12.0.0
     react-dom: ^17.0.2
     react-refresh: ^0.11.0
