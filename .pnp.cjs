@@ -54,6 +54,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "npm:17.0.11"],
             ["@types/react-table", "npm:7.7.9"],
             ["@types/styled-components", "npm:5.1.20"],
+            ["@types/zxcvbn", "npm:4.4.1"],
             ["@typescript-eslint/eslint-plugin", "virtual:f7eebd74bd65b402f46efc7c3627c1fc7f3c31b70babe730e65cf3fc3b488a4b93214b7f7c1ae8d303f45bfc5ca43861d761643e25fe21a71fe10fe9ccddc278#npm:5.9.1"],
             ["@typescript-eslint/parser", "virtual:f7eebd74bd65b402f46efc7c3627c1fc7f3c31b70babe730e65cf3fc3b488a4b93214b7f7c1ae8d303f45bfc5ca43861d761643e25fe21a71fe10fe9ccddc278#npm:5.9.1"],
             ["antd", "virtual:f7eebd74bd65b402f46efc7c3627c1fc7f3c31b70babe730e65cf3fc3b488a4b93214b7f7c1ae8d303f45bfc5ca43861d761643e25fe21a71fe10fe9ccddc278#npm:4.18.3"],
@@ -109,7 +110,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["webpack", "virtual:f7eebd74bd65b402f46efc7c3627c1fc7f3c31b70babe730e65cf3fc3b488a4b93214b7f7c1ae8d303f45bfc5ca43861d761643e25fe21a71fe10fe9ccddc278#npm:5.66.0"],
             ["webpack-dev-server", "virtual:f7eebd74bd65b402f46efc7c3627c1fc7f3c31b70babe730e65cf3fc3b488a4b93214b7f7c1ae8d303f45bfc5ca43861d761643e25fe21a71fe10fe9ccddc278#npm:4.7.3"],
             ["webpack-manifest-plugin", "virtual:f7eebd74bd65b402f46efc7c3627c1fc7f3c31b70babe730e65cf3fc3b488a4b93214b7f7c1ae8d303f45bfc5ca43861d761643e25fe21a71fe10fe9ccddc278#npm:4.1.1"],
-            ["workbox-webpack-plugin", "virtual:f7eebd74bd65b402f46efc7c3627c1fc7f3c31b70babe730e65cf3fc3b488a4b93214b7f7c1ae8d303f45bfc5ca43861d761643e25fe21a71fe10fe9ccddc278#npm:6.4.2"]
+            ["workbox-webpack-plugin", "virtual:f7eebd74bd65b402f46efc7c3627c1fc7f3c31b70babe730e65cf3fc3b488a4b93214b7f7c1ae8d303f45bfc5ca43861d761643e25fe21a71fe10fe9ccddc278#npm:6.4.2"],
+            ["zxcvbn", "npm:4.4.2"]
           ],
           "linkType": "SOFT",
         }]
@@ -6382,6 +6384,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-yargs-parser-npm-20.2.1-2eed5b5c1c-1d039e6449.zip/node_modules/@types/yargs-parser/",
           "packageDependencies": [
             ["@types/yargs-parser", "npm:20.2.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/zxcvbn", [
+        ["npm:4.4.1", {
+          "packageLocation": "./.yarn/cache/@types-zxcvbn-npm-4.4.1-a2c47818e9-71c484f1aa.zip/node_modules/@types/zxcvbn/",
+          "packageDependencies": [
+            ["@types/zxcvbn", "npm:4.4.1"]
           ],
           "linkType": "HARD",
         }]
@@ -20304,6 +20315,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "npm:17.0.11"],
             ["@types/react-table", "npm:7.7.9"],
             ["@types/styled-components", "npm:5.1.20"],
+            ["@types/zxcvbn", "npm:4.4.1"],
             ["@typescript-eslint/eslint-plugin", "virtual:f7eebd74bd65b402f46efc7c3627c1fc7f3c31b70babe730e65cf3fc3b488a4b93214b7f7c1ae8d303f45bfc5ca43861d761643e25fe21a71fe10fe9ccddc278#npm:5.9.1"],
             ["@typescript-eslint/parser", "virtual:f7eebd74bd65b402f46efc7c3627c1fc7f3c31b70babe730e65cf3fc3b488a4b93214b7f7c1ae8d303f45bfc5ca43861d761643e25fe21a71fe10fe9ccddc278#npm:5.9.1"],
             ["antd", "virtual:f7eebd74bd65b402f46efc7c3627c1fc7f3c31b70babe730e65cf3fc3b488a4b93214b7f7c1ae8d303f45bfc5ca43861d761643e25fe21a71fe10fe9ccddc278#npm:4.18.3"],
@@ -20359,7 +20371,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["webpack", "virtual:f7eebd74bd65b402f46efc7c3627c1fc7f3c31b70babe730e65cf3fc3b488a4b93214b7f7c1ae8d303f45bfc5ca43861d761643e25fe21a71fe10fe9ccddc278#npm:5.66.0"],
             ["webpack-dev-server", "virtual:f7eebd74bd65b402f46efc7c3627c1fc7f3c31b70babe730e65cf3fc3b488a4b93214b7f7c1ae8d303f45bfc5ca43861d761643e25fe21a71fe10fe9ccddc278#npm:4.7.3"],
             ["webpack-manifest-plugin", "virtual:f7eebd74bd65b402f46efc7c3627c1fc7f3c31b70babe730e65cf3fc3b488a4b93214b7f7c1ae8d303f45bfc5ca43861d761643e25fe21a71fe10fe9ccddc278#npm:4.1.1"],
-            ["workbox-webpack-plugin", "virtual:f7eebd74bd65b402f46efc7c3627c1fc7f3c31b70babe730e65cf3fc3b488a4b93214b7f7c1ae8d303f45bfc5ca43861d761643e25fe21a71fe10fe9ccddc278#npm:6.4.2"]
+            ["workbox-webpack-plugin", "virtual:f7eebd74bd65b402f46efc7c3627c1fc7f3c31b70babe730e65cf3fc3b488a4b93214b7f7c1ae8d303f45bfc5ca43861d761643e25fe21a71fe10fe9ccddc278#npm:6.4.2"],
+            ["zxcvbn", "npm:4.4.2"]
           ],
           "linkType": "SOFT",
         }]
@@ -20532,6 +20545,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/yocto-queue-npm-0.1.0-c6c9a7db29-f77b3d8d00.zip/node_modules/yocto-queue/",
           "packageDependencies": [
             ["yocto-queue", "npm:0.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["zxcvbn", [
+        ["npm:4.4.2", {
+          "packageLocation": "./.yarn/cache/zxcvbn-npm-4.4.2-6527983856-76ab32c066.zip/node_modules/zxcvbn/",
+          "packageDependencies": [
+            ["zxcvbn", "npm:4.4.2"]
           ],
           "linkType": "HARD",
         }]

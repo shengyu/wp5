@@ -1,5 +1,5 @@
 import { ChakraProvider } from '@chakra-ui/react';
-import CsvDemo from 'components/CsvDemo';
+import PasswordDemo from 'components/PasswordDemo';
 import React from 'react';
 import './App.css';
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <ChakraProvider>
       <div className="App">
-        <CsvDemo />
+        <PasswordDemo />
       </div>
     </ChakraProvider>
   );
